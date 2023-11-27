@@ -1,0 +1,84 @@
+﻿@model BookVM
+
+<div class="card shadow border-0 my-4">
+    <div class="card-header navbar-custom bg-gradient m-lg-0 py-1">
+        <div class="row">
+            <div class="col-12 text-center">
+                <h2 class="text-white py-2">Create Book</h2>
+            </div>
+        </div>
+    </div>
+    <div class="card-body p-4">
+        <form method="post" class="row">
+            <div class="border p-3">
+                <div class="form-floating py-2 col-12">
+                    <input asp-for="Book.Title" class="form-control border-0 shadow" />
+                    <label asp-for="Book.Title" class="ms-0"></label>
+                </div>
+                <div class="form-floating py-2 col-12">
+                    <textarea asp-for="Book.Description" class="form-control border-0 shadow"></textarea>
+                    <label asp-for="Book.Description" class="ms-0"></label>
+                </div>
+                <div class="form-floating py-2 col-12">
+                    <input asp-for="Book.ISBN" class="form-control border-0 shadow" />
+                    <label asp-for="Book.ISBN" class="ms-0"></label>
+                </div>
+                <div class="form-floating py-2 col-12">
+                    <input asp-for="Book.Author" class="form-control border-0 shadow" />
+                    <label asp-for="Book.Author" class="ms-0"></label>
+                </div>
+                <div class="form-floating py-2 col-12">
+                    <input asp-for="Book.ListPrice" class="form-control border-0 shadow" />
+                    <label asp-for="Book.ListPrice" class="ms-0"></label>
+                </div>
+                <div class="form-floating py-2 col-12">
+                    <input asp-for="Book.Price" class="form-control border-0 shadow" />
+                    <label asp-for="Book.Price" class="ms-0"></label>
+                </div>
+                <div class="form-floating py-2 col-12">
+                    <input asp-for="Book.Price50" class="form-control border-0 shadow" />
+                    <label asp-for="Book.Price50" class="ms-0"></label>
+                </div>
+                <div class="form-floating py-2 col-12">
+                    <input asp-for="Book.Price100" class="form-control border-0 shadow" />
+                    <label asp-for="Book.Price100" class="ms-0"></label>
+                </div>
+                <div class="form-floating py-2 col-12">
+                    <select asp-for="@Model.Book.CategoryId" asp-items="@Model.CategoryList" class="form-select border-0 shadow">
+                        <option disabled selected>--Select Category--</option>
+                    </select>
+                    <label asp-for="Book.CategoryId" class="ms-2"></label>
+                </div>
+
+                <div class="row pt-2">
+                    <div class="col-6 col-md-3">
+                        <button type="submit" class="btn btn-secondary form-control">Create</button>
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <a asp-controller="Book" asp-action="Index" class="btn btn-outline-secondary form-control">
+                            Back To List
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+        </form>
+    </div>
+</div>
+
+
+
+
+@* @section Scripts {
+    <script src="~/lib/jquery/dist/jquery.js"></script>
+    <script src="~/lib/jquery-validation/dist/jquery.validate.js"></script>
+    <script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js"></script>
+
+} *@
+
+        @section Scripts{
+            @{
+                <partial name="_ValidationScriptsPartial"/>
+            }
+        }
