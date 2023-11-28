@@ -14,3 +14,15 @@ C:\Users\anup.gautam\Desktop\Demo\Demo.Models\obj\Debug\net7.0\refint\Demo.Model
 C:\Users\anup.gautam\Desktop\Demo\Demo.Models\obj\Debug\net7.0\Demo.Models.pdb
 C:\Users\anup.gautam\Desktop\Demo\Demo.Models\obj\Debug\net7.0\ref\Demo.Models.dll
 C:\Users\anup.gautam\Desktop\Demo\Demo.Models\obj\Debug\net7.0\Demo.Models.csproj.AssemblyReference.cache
+C:\Users\anup.gautam\Desktop\Project\BookShop-in-Asp-.Net\Demo\Demo.Models\bin\Debug\net7.0\Demo.Models.deps.json
+C:\Users\anup.gautam\Desktop\Project\BookShop-in-Asp-.Net\Demo\Demo.Models\bin\Debug\net7.0\Demo.Models.dll
+C:\Users\anup.gautam\Desktop\Project\BookShop-in-Asp-.Net\Demo\Demo.Models\bin\Debug\net7.0\Demo.Models.pdb
+C:\Users\anup.gautam\Desktop\Project\BookShop-in-Asp-.Net\Demo\Demo.Models\obj\Debug\net7.0\Demo.Models.csproj.AssemblyReference.cache
+C:\Users\anup.gautam\Desktop\Project\BookShop-in-Asp-.Net\Demo\Demo.Models\obj\Debug\net7.0\Demo.Models.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\anup.gautam\Desktop\Project\BookShop-in-Asp-.Net\Demo\Demo.Models\obj\Debug\net7.0\Demo.Models.AssemblyInfoInputs.cache
+C:\Users\anup.gautam\Desktop\Project\BookShop-in-Asp-.Net\Demo\Demo.Models\obj\Debug\net7.0\Demo.Models.AssemblyInfo.cs
+C:\Users\anup.gautam\Desktop\Project\BookShop-in-Asp-.Net\Demo\Demo.Models\obj\Debug\net7.0\Demo.Models.csproj.CoreCompileInputs.cache
+C:\Users\anup.gautam\Desktop\Project\BookShop-in-Asp-.Net\Demo\Demo.Models\obj\Debug\net7.0\Demo.Models.dll
+C:\Users\anup.gautam\Desktop\Project\BookShop-in-Asp-.Net\Demo\Demo.Models\obj\Debug\net7.0\refint\Demo.Models.dll
+C:\Users\anup.gautam\Desktop\Project\BookShop-in-Asp-.Net\Demo\Demo.Models\obj\Debug\net7.0\Demo.Models.pdb
+C:\Users\anup.gautam\Desktop\Project\BookShop-in-Asp-.Net\Demo\Demo.Models\obj\Debug\net7.0\ref\Demo.Models.dll

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\anup.gautam\\Desktop\\Demo\\Demo.DataAccess\\Demo.DataAccess.csproj": {}
+    "C:\\Users\\anup.gautam\\Desktop\\Project\\BookShop-in-Asp-.Net\\Demo\\Demo.DataAccess\\Demo.DataAccess.csproj": {}
   },
   "projects": {
-    "C:\\Users\\anup.gautam\\Desktop\\Demo\\Demo.DataAccess\\Demo.DataAccess.csproj": {
+    "C:\\Users\\anup.gautam\\Desktop\\Project\\BookShop-in-Asp-.Net\\Demo\\Demo.DataAccess\\Demo.DataAccess.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\anup.gautam\\Desktop\\Demo\\Demo.DataAccess\\Demo.DataAccess.csproj",
+        "projectUniqueName": "C:\\Users\\anup.gautam\\Desktop\\Project\\BookShop-in-Asp-.Net\\Demo\\Demo.DataAccess\\Demo.DataAccess.csproj",
         "projectName": "Demo.DataAccess",
-        "projectPath": "C:\\Users\\anup.gautam\\Desktop\\Demo\\Demo.DataAccess\\Demo.DataAccess.csproj",
+        "projectPath": "C:\\Users\\anup.gautam\\Desktop\\Project\\BookShop-in-Asp-.Net\\Demo\\Demo.DataAccess\\Demo.DataAccess.csproj",
         "packagesPath": "C:\\Users\\anup.gautam\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\anup.gautam\\Desktop\\Demo\\Demo.DataAccess\\obj\\",
+        "outputPath": "C:\\Users\\anup.gautam\\Desktop\\Project\\BookShop-in-Asp-.Net\\Demo\\Demo.DataAccess\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\anup.gautam\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -28,11 +28,11 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\Users\\anup.gautam\\Desktop\\Demo\\Demo.Models\\Demo.Models.csproj": {
-                "projectPath": "C:\\Users\\anup.gautam\\Desktop\\Demo\\Demo.Models\\Demo.Models.csproj"
+              "C:\\Users\\anup.gautam\\Desktop\\Project\\BookShop-in-Asp-.Net\\Demo\\Demo.Models\\Demo.Models.csproj": {
+                "projectPath": "C:\\Users\\anup.gautam\\Desktop\\Project\\BookShop-in-Asp-.Net\\Demo\\Demo.Models\\Demo.Models.csproj"
               },
-              "C:\\Users\\anup.gautam\\Desktop\\Demo\\Demo.Utility\\Demo.Utility.csproj": {
-                "projectPath": "C:\\Users\\anup.gautam\\Desktop\\Demo\\Demo.Utility\\Demo.Utility.csproj"
+              "C:\\Users\\anup.gautam\\Desktop\\Project\\BookShop-in-Asp-.Net\\Demo\\Demo.Utility\\Demo.Utility.csproj": {
+                "projectPath": "C:\\Users\\anup.gautam\\Desktop\\Project\\BookShop-in-Asp-.Net\\Demo\\Demo.Utility\\Demo.Utility.csproj"
               }
             }
           }
@@ -86,14 +86,14 @@
         }
       }
     },
-    "C:\\Users\\anup.gautam\\Desktop\\Demo\\Demo.Models\\Demo.Models.csproj": {
+    "C:\\Users\\anup.gautam\\Desktop\\Project\\BookShop-in-Asp-.Net\\Demo\\Demo.Models\\Demo.Models.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\anup.gautam\\Desktop\\Demo\\Demo.Models\\Demo.Models.csproj",
+        "projectUniqueName": "C:\\Users\\anup.gautam\\Desktop\\Project\\BookShop-in-Asp-.Net\\Demo\\Demo.Models\\Demo.Models.csproj",
         "projectName": "Demo.Models",
-        "projectPath": "C:\\Users\\anup.gautam\\Desktop\\Demo\\Demo.Models\\Demo.Models.csproj",
+        "projectPath": "C:\\Users\\anup.gautam\\Desktop\\Project\\BookShop-in-Asp-.Net\\Demo\\Demo.Models\\Demo.Models.csproj",
         "packagesPath": "C:\\Users\\anup.gautam\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\anup.gautam\\Desktop\\Demo\\Demo.Models\\obj\\",
+        "outputPath": "C:\\Users\\anup.gautam\\Desktop\\Project\\BookShop-in-Asp-.Net\\Demo\\Demo.Models\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\anup.gautam\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -147,14 +147,14 @@
         }
       }
     },
-    "C:\\Users\\anup.gautam\\Desktop\\Demo\\Demo.Utility\\Demo.Utility.csproj": {
+    "C:\\Users\\anup.gautam\\Desktop\\Project\\BookShop-in-Asp-.Net\\Demo\\Demo.Utility\\Demo.Utility.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\anup.gautam\\Desktop\\Demo\\Demo.Utility\\Demo.Utility.csproj",
+        "projectUniqueName": "C:\\Users\\anup.gautam\\Desktop\\Project\\BookShop-in-Asp-.Net\\Demo\\Demo.Utility\\Demo.Utility.csproj",
         "projectName": "Demo.Utility",
-        "projectPath": "C:\\Users\\anup.gautam\\Desktop\\Demo\\Demo.Utility\\Demo.Utility.csproj",
+        "projectPath": "C:\\Users\\anup.gautam\\Desktop\\Project\\BookShop-in-Asp-.Net\\Demo\\Demo.Utility\\Demo.Utility.csproj",
         "packagesPath": "C:\\Users\\anup.gautam\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\anup.gautam\\Desktop\\Demo\\Demo.Utility\\obj\\",
+        "outputPath": "C:\\Users\\anup.gautam\\Desktop\\Project\\BookShop-in-Asp-.Net\\Demo\\Demo.Utility\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\anup.gautam\\AppData\\Roaming\\NuGet\\NuGet.Config",

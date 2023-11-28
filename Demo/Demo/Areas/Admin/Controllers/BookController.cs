@@ -25,11 +25,11 @@ namespace Demo.Areas.Admin.Controllers
             
             return View(objBookList);
         }
-        public IActionResult Create()
-        {  
-            BookVM bookVM = new BookVM ()
+        public IActionResult Upsert(int? id)
+        {
+            BookVM bookVM = new BookVM()
             {
-               CategoryList = _unitOfWork.Category.
+                CategoryList = _unitOfWork.Category.
                GetAll().Select(u => new SelectListItem
                {
                    Text = u.Name,
@@ -37,55 +37,63 @@ namespace Demo.Areas.Admin.Controllers
                }),
                 Book = new Book()
             };
-            return View(bookVM);
-        }
-
-        [HttpPost]
-        public IActionResult Create(Book obj)
-        {
-            if (ModelState.IsValid)
-            {
-                _unitOfWork.Book.Add(obj);
-                _unitOfWork.Save();
-                var successMessage = $" '{obj.Title}' was added successfully";
-                TempData["success"] = successMessage;
-                return RedirectToAction("Index");
-            }
-            return View();
-
-        }
-
-        public IActionResult Edit(int? id)
-        {
             if (id == null || id == 0)
-            {
-                return NotFound();
+            { 
+                //create
+                return View(bookVM);
             }
-            Book? bookFromDb = _unitOfWork.Book.Get(u => u.Id == id);
-            //Book? bookFromDb1 = _db.Categories.FirstOrDefault(u=>u.Id == id);
-            //Book? bookFromDb2 = _db.Categories.Where(u=>u.Id == id).FirstOrDefault;
-
-            if (bookFromDb == null)
+            else
             {
-                return NotFound();
+                //update
+                bookVM.Book = _unitOfWork.Book.Get(u => u.Id == id);
+                return View(bookVM);
             }
-            return View(bookFromDb);
         }
-
         [HttpPost]
-        public IActionResult Edit(Book obj)
+        public IActionResult Upsert(BookVM bookVM, IFormFile? file)
         {
             if (ModelState.IsValid)
             {
-                _unitOfWork.Book.Update(obj);
+                _unitOfWork.Book.Add(bookVM.Book);
                 _unitOfWork.Save();
-                var successMessage = $" '{obj.Title}' was updated successfully";
+                var successMessage = $" '{bookVM.Book.Title}' was added successfully";
                 TempData["success"] = successMessage;
                 return RedirectToAction("Index");
             }
             return View();
 
         }
+
+        //public IActionResult Edit(int? id)
+        //{
+        //    if (id == null || id == 0)
+        //    {
+        //        return NotFound();
+        //    }
+        //    Book? bookFromDb = _unitOfWork.Book.Get(u => u.Id == id);
+            
+        //    if (bookFromDb == null)
+        //    {
+        //        return NotFound();
+        //    }
+        //    return View(bookFromDb);
+        //}
+        
+        //[HttpPost]
+        //public IActionResult Edit(Book obj)
+        //{
+        //    if (ModelState.IsValid)
+        //    {
+        //        _unitOfWork.Book.Update(obj);
+        //        _unitOfWork.Save();
+        //        var successMessage = $" '{obj.Title}' was updated successfully";
+        //        TempData["success"] = successMessage;
+        //        return RedirectToAction("Index");
+        //    }
+        //    return View();
+
+        //}
+        
 
         public IActionResult Delete(int? id)
         {
