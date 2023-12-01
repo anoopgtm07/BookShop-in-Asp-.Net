@@ -13,6 +13,14 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "C:\\Users\\anup.gautam\\Desktop\\Project\\BookShop-in-Asp-.Net\\Demo\\Demo\\wwwroot\\images\\book\\b952416d-5dd5-4b73-9a20-f0de1eafb8b3.jpg",
+      "PackagePath": "staticwebassets\\images\\book\\b952416d-5dd5-4b73-9a20-f0de1eafb8b3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\anup.gautam\\Desktop\\Project\\BookShop-in-Asp-.Net\\Demo\\Demo\\wwwroot\\images\\book\\e0dc9571-3f18-42a2-8739-10931dcb4bdb.jpg",
+      "PackagePath": "staticwebassets\\images\\book\\e0dc9571-3f18-42a2-8739-10931dcb4bdb.jpg"
+    },
+    {
       "Id": "C:\\Users\\anup.gautam\\Desktop\\Project\\BookShop-in-Asp-.Net\\Demo\\Demo\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },

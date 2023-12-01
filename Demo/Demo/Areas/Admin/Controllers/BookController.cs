@@ -14,10 +14,14 @@ namespace Demo.Areas.Admin.Controllers
     [Area("Admin")]
     public class BookController : Controller
     {
+        //this constructor is receiving two dependencies IUnitOfWork and IWebHostEnvironment
+
         private readonly IUnitOfWork _unitOfWork;
-        public BookController(IUnitOfWork unitOfWork)
+        private readonly IWebHostEnvironment _webHostEnvironment;
+        public BookController(IUnitOfWork unitOfWork, IWebHostEnvironment webHostEnvironment)
         {
             _unitOfWork = unitOfWork;
+            _webHostEnvironment = webHostEnvironment;
         }
         public IActionResult Index()
         {
@@ -49,20 +53,56 @@ namespace Demo.Areas.Admin.Controllers
                 return View(bookVM);
             }
         }
+
         [HttpPost]
         public IActionResult Upsert(BookVM bookVM, IFormFile? file)
         {
             if (ModelState.IsValid)
             {
-                _unitOfWork.Book.Add(bookVM.Book);
+                string wwwRootPath = _webHostEnvironment.WebRootPath;
+                if (file != null)
+                {
+                    string fileName = Guid.NewGuid().ToString() + Path.GetExtension(file.FileName);
+                    string bookPath = Path.Combine(wwwRootPath, @"images\book");
+
+                    if (bookVM.Book.ImageUrl != null)
+                    {
+                        //delete the old image
+                        var oldImagePath = Path.Combine(wwwRootPath, bookVM.Book.ImageUrl.TrimStart('\\'));
+
+                        if (System.IO.File.Exists(oldImagePath))
+                        {
+                            System.IO.File.Delete(oldImagePath);
+                        }
+                    }
+
+                    using (var fileStream = new FileStream(Path.Combine(bookPath, fileName), FileMode.Create))
+                    {
+                        file.CopyTo(fileStream);
+                    }
+
+                    bookVM.Book.ImageUrl = @"\images\book\" + fileName;
+                }
+
+                _unitOfWork.Book.Update(bookVM.Book);
+
                 _unitOfWork.Save();
-                var successMessage = $" '{bookVM.Book.Title}' was added successfully";
+                var successMessage = $" '{bookVM.Book.Title}' was updated successfully";
                 TempData["success"] = successMessage;
                 return RedirectToAction("Index");
             }
-            return View();
-
+            else
+            {
+                bookVM.CategoryList = _unitOfWork.Category.GetAll().Select(u => new SelectListItem
+                {
+                    Text = u.Name,
+                    Value = u.Id.ToString(),
+                });
+                return View(bookVM);
+            }
         }
+
+
 
         //public IActionResult Edit(int? id)
         //{
@@ -71,14 +111,14 @@ namespace Demo.Areas.Admin.Controllers
         //        return NotFound();
         //    }
         //    Book? bookFromDb = _unitOfWork.Book.Get(u => u.Id == id);
-            
+
         //    if (bookFromDb == null)
         //    {
         //        return NotFound();
         //    }
         //    return View(bookFromDb);
         //}
-        
+
         //[HttpPost]
         //public IActionResult Edit(Book obj)
         //{
@@ -93,7 +133,7 @@ namespace Demo.Areas.Admin.Controllers
         //    return View();
 
         //}
-        
+
 
         public IActionResult Delete(int? id)
         {

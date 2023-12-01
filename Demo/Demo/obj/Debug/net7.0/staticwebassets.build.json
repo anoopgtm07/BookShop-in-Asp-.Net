@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "M5bXwKRKoP1VT9Gt+Hl+nkcPzcyQjlUhaD2QAwqJKW4=",
+  "Hash": "sHg2I6dP1x4FV3HpptC0ENNwV5XiDkMpDLxMa7yL63I=",
   "Source": "Demo",
   "BasePath": "_content/Demo",
   "Mode": "Default",
@@ -83,6 +83,40 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "C:\\Users\\anup.gautam\\Desktop\\Project\\BookShop-in-Asp-.Net\\Demo\\Demo\\wwwroot\\images\\book\\b952416d-5dd5-4b73-9a20-f0de1eafb8b3.jpg",
+      "SourceId": "Demo",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\anup.gautam\\Desktop\\Project\\BookShop-in-Asp-.Net\\Demo\\Demo\\wwwroot\\",
+      "BasePath": "_content/Demo",
+      "RelativePath": "images/book/b952416d-5dd5-4b73-9a20-f0de1eafb8b3.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\book\\b952416d-5dd5-4b73-9a20-f0de1eafb8b3.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\anup.gautam\\Desktop\\Project\\BookShop-in-Asp-.Net\\Demo\\Demo\\wwwroot\\images\\book\\e0dc9571-3f18-42a2-8739-10931dcb4bdb.jpg",
+      "SourceId": "Demo",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\anup.gautam\\Desktop\\Project\\BookShop-in-Asp-.Net\\Demo\\Demo\\wwwroot\\",
+      "BasePath": "_content/Demo",
+      "RelativePath": "images/book/e0dc9571-3f18-42a2-8739-10931dcb4bdb.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\book\\e0dc9571-3f18-42a2-8739-10931dcb4bdb.jpg"
     },
     {
       "Identity": "C:\\Users\\anup.gautam\\Desktop\\Project\\BookShop-in-Asp-.Net\\Demo\\Demo\\wwwroot\\js\\site.js",
